@@ -1,0 +1,162 @@
+main .secondMessageLeft, main .messageRight, main .messageLeft {
+  padding: 10px;
+  width: 50%;
+  font-weight: 500;
+  font-size: 0.8em;
+  box-shadow: 6px 6px 12px #d5d5d5;
+}
+
+main .messagesRightContainer, main .messagesleftContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3D2751;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 20px 0 20px;
+  background-color: #CB42FF;
+  height: 100px;
+  border-radius: 30px 30px 10px 10px;
+}
+header .avatar {
+  border-radius: 50%;
+  border: solid 1px #fff;
+  margin-right: 10px;
+}
+header .containerHeaderLeft {
+  display: flex;
+}
+header .name {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+header .status {
+  font-size: 0.7em;
+  color: #D87AFF;
+  margin-top: 3px;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+.backgroundContainer {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.container {
+  background-color: #F5F3F7;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  height: max-content;
+  width: 370px;
+  padding-bottom: 15px;
+}
+.container .topWhiteBlock {
+  width: 195px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  left: 88.5px;
+  border-radius: 0 0 15px 15px;
+}
+
+main {
+  height: max-content;
+  border-radius: 0 0 30px 30px;
+  margin: 0 15px;
+}
+main .messageLeft {
+  border-radius: 15px 15px 15px 5px;
+  background-color: #EDE5F4;
+  color: #B394C5;
+}
+main .messageRight {
+  border-radius: 15px 15px 5px 15px;
+  background-color: #fff;
+  color: #C6C2CA;
+}
+main .messagesleftContainer {
+  align-items: flex-start;
+}
+main .messagesRightContainer {
+  align-items: flex-end;
+}
+main .messagesRightContainer .dogPicturesContent {
+  display: flex;
+  gap: 15px;
+}
+main .messagesRightContainer .dogPicturesContent .dogPictures {
+  border-radius: 20px;
+}
+main .secondMessageLeft {
+  background: linear-gradient(0.25turn, #E443FF, #8B3DFD);
+  height: 40px;
+  border-radius: 15px 15px 15px 5px;
+  width: 70%;
+  color: #F9ABFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+main .secondMessageLeft .activityMessage {
+  display: flex;
+  align-items: center;
+}
+main .secondMessageLeft .activityMessage p {
+  margin-left: 10px;
+}
+main .secondMessageLeft > p {
+  color: #FAE5FF;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer input {
+  width: 320px;
+  height: 55px;
+  border: none;
+  border-radius: 40px;
+  padding-left: 20px;
+}
+footer ::placeholder {
+  color: #DADCDB;
+}
+footer button {
+  position: absolute;
+  top: 8px;
+  right: 23px;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

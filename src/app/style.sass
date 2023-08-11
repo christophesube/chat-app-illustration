@@ -1,0 +1,171 @@
+@use "sass:math"
+
+$cardLeft_text : #B394C5
+$cardLeft_background : #EDE5F4
+$cardRight_text : #C6C2CA
+$header_background : #CB42FF
+$background : #F5F3F7
+$cardtext_size : 0.8em
+$button_color : #3D2751
+
+%messageCard
+  padding : 10px
+  width : 50%
+  font-weight: 500
+  font-size: $cardtext_size
+  box-shadow:  6px 6px 12px #d5d5d5
+
+%messagesContainer
+  display: flex
+  flex-direction: column
+
+%button
+  height: 40px
+  width: 40px
+  border-radius : 50%
+  border: none
+  background-color: $button_color
+
+header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding : 27px 20px 0 20px
+  background-color: $header_background
+  height: 100px
+  border-radius: 30px 30px 10px 10px
+
+  .avatar
+    border-radius: 50%
+    border: solid 1px #fff
+    margin-right: 10px
+
+  .menu
+    
+
+  .containerHeaderLeft
+    display: flex
+
+  .name
+    color: #fff
+    font-weight: 600
+    margin: 0
+
+  .status
+    font-size: 0.7em
+    color: #D87AFF
+    margin-top: 3px
+  
+
+body
+  background-color : #000
+  display : flex
+  justify-content :  center
+  align-items : center
+
+h1
+  color : #fff
+
+.backgroundContainer
+  background-color:#fff
+  padding: 15px
+  border-radius: 40px
+
+.container
+  background-color : $background 
+  display: flex
+  position : relative
+  flex-direction: column
+  justify-content: space-between
+  border-radius: 40px
+  height : max-content
+  width : 370px
+  padding-bottom: 15px
+  
+  .topWhiteBlock
+    width:195px
+    height: 25px
+    position: absolute
+    background-color: #fff
+    left: math.div((372px-195px), 2) 
+    border-radius: 0 0 15px 15px
+    
+
+main
+  height: max-content
+  border-radius: 0 0 30px 30px
+  margin: 0 15px
+
+  .messageLeft
+    @extend %messageCard
+    border-radius : 15px 15px 15px 5px
+    background-color : $cardLeft_background
+    color : $cardLeft_text
+
+  .messageRight
+    @extend %messageCard
+    border-radius : 15px 15px 5px 15px
+    background-color : #fff
+    color : $cardRight_text
+    
+  .messagesleftContainer
+    @extend %messagesContainer
+    align-items: flex-start
+
+  .messagesRightContainer
+    @extend %messagesContainer
+    align-items: flex-end
+
+    .dogPicturesContent
+      display: flex
+      gap: 15px
+
+      .dogPictures
+        border-radius: 20px
+
+  .secondMessageLeft
+    @extend %messageCard
+    background: linear-gradient(0.25turn,#E443FF, #8B3DFD)
+    height: 40px
+    border-radius : 15px 15px 15px 5px
+    width: 70%
+    color: #F9ABFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin : 20px 0
+  
+    .activityMessage
+      display: flex
+      align-items: center
+
+      p
+        margin-left: 10px
+
+    > p
+      color: #FAE5FF
+      font-size: 1.8em
+      font-weight: bold
+
+footer
+  text-align: center
+  position: relative
+  width: 100%
+
+  input
+    width: 320px
+    height: 55px
+    border: none
+    border-radius: 40px
+    padding-left: 20px
+  
+  ::placeholder
+      color: #DADCDB 
+
+  button
+    @extend %button
+    position: absolute
+    top: 8px
+    right: 23px
+    padding-top: 5px
